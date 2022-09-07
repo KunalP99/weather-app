@@ -1,0 +1,52 @@
+@import 'config.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font-style;
+  color: $primary-font-color;
+}
+
+.main-container {
+  background: $background-linear;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+.weather-container {
+  @include flexCenter;
+  flex-direction: column;
+  margin-top: 200px;
+
+  #temp {
+    font-size: 7rem;
+  }
+
+  #location {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .weather-icon {
+    width: 100px;
+  }
+}

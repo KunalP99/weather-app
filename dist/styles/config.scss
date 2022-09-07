@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$background-linear: linear-gradient(
+  179.26deg,
+  #c8d4fc 0.64%,
+  rgba(126, 216, 255, 0) 84.45%
+);
+
+$primary-font-style: 'Rubik', sans-serif;
+$primary-font-color: #4c5576;

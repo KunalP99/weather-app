@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #4c5576;
+}
+
+.main-container {
+  background: linear-gradient(179.26deg, #c8d4fc 0.64%, rgba(126, 216, 255, 0) 84.45%);
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.header-wrapper p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.header-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+.weather-container #temp {
+  font-size: 7rem;
+}
+.weather-container #location {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.weather-container .weather-icon {
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
