@@ -9,10 +9,12 @@
 body {
   font-family: $primary-font-style;
   color: $primary-font-color;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-container {
   background: $background-linear;
+  height: 100vh;
 }
 
 .header-wrapper {

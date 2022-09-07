@@ -8,10 +8,12 @@
 body {
   font-family: "Rubik", sans-serif;
   color: #4c5576;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-container {
-  background: linear-gradient(179.26deg, #c8d4fc 0.64%, rgba(126, 216, 255, 0) 84.45%);
+  background: linear-gradient(179.26deg, #9eb5ff 0.64%, rgba(0, 133, 190, 0) 84.45%);
+  height: 100vh;
 }
 
 .header-wrapper {
