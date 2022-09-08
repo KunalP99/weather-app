@@ -24,6 +24,7 @@ async function getLocation() {
   let lon;
   const api = 'dd190da1025e91ba1feede45a0752686';
 
+  // Gets the current position of the user using geolocation latitude and logitude
   navigator.geolocation.getCurrentPosition((position) => {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
@@ -33,7 +34,6 @@ async function getLocation() {
     fetch(base)
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
         const { temp } = data.main;
         const windSpeed = data.wind.speed;
         const { humidity } = data.main;
@@ -51,20 +51,24 @@ async function getLocation() {
   });
 }
 
+// Gets the location of the location the user inputs
 function getUserInputLocation() {
   const form = document.getElementById('form');
   const userInput = document.getElementById('city');
+  const errorMsg = document.querySelector('.error-msg');
   const api = 'dd190da1025e91ba1feede45a0752686';
   let userValue;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+
     userValue = userInput.value;
+
     const base = `https://api.openweathermap.org/data/2.5/weather?q=${userValue}&appid=${api}&units=metric`;
+
     fetch(base)
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
         const { temp } = data.main;
         const windSpeed = data.wind.speed;
         const { humidity } = data.main;
@@ -78,8 +82,12 @@ function getUserInputLocation() {
           humidity,
           feelsLike
         );
+        userInput.value = '';
+        errorMsg.style.visibility = 'hidden';
       })
       .catch((error) => {
+        errorMsg.style.visibility = 'visible';
+        console.log(error);
         console.log('This place does not exist');
       });
   });
