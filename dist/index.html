@@ -24,6 +24,35 @@
         <p id="temp"></p>
         <p id="location"></p>
       </div>
+      <div class="extra-weather-info-container">
+        <div class="wind-container">
+          <div class="wind-speed-icon-text-container">
+            <img src="/dist/images/wind.svg" alt="Wind icon" />
+            <p id="wind-speed"></p>
+          </div>
+          <p>Wind Speed</p>
+        </div>
+        <div class="humidity-container">
+          <div class="humidity-icon-text-container">
+            <img src="/dist/images/humidity.svg" alt="Humidity icon" />
+            <p id="humidity">34%</p>
+          </div>
+          <p>Humidity</p>
+        </div>
+        <div class="feels-like-container">
+          <div class="feels-like-icon-text-container">
+            <img src="/dist/images/feels-like.svg" alt="Feels like icon" />
+            <p id="feels-like">17</p>
+          </div>
+          <p>Feels Like</p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="form">
+          <label for="city">Enter a city name:</label>
+          <input type="text" id="city" name="city" />
+        </form>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
