@@ -11,7 +11,7 @@ const domElements = (icon, temp, cityName, windSpeed, humidity, feelsLike) => {
   const humidityElement = document.getElementById('humidity');
   const feelsLikeElement = document.getElementById('feels-like');
 
-  weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
   tempElement.textContent = `${Math.round(temp)} °C`;
   cityElement.textContent = cityName;
   windElement.textContent = `${windSpeed} m/s`;
